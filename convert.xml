@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="DITA_to_hdoc" default="convert">
+    <target name="convert">
+        <property name="filePathSrc" value="${basedir}/src"/>
+        
+        
+        <dirname property="directoryProperty" file="${filePathSrc}"/>
+        <mkdir dir="${filePathSrc}" />
+        
+                
+            
+        
+       <!-- lecture de la map et preparation du fichier concaténé --> 
+        <xslt in="map.ditamap" out="concat.xml" style="read_map.xsl"/>
+        
+        <!-- gestion des images (copie+rename) -->
+        <xslt in="concat.xml" out="ant_image.xml" style="copy_images.xsl"/>
+        <ant antfile="ant_image.xml"></ant>
+        
+        <!-- traitement général -->
+        <xslt in="concat.xml" out="resultat.xml" style="read_concept_task.xsl"/>
+    </target>
+</project>

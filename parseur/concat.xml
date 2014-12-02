@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?><map title="Garage tasks and concepts">
+ 
+  <topic dir="../tasks" href="../tasks/changingtheoil.xml">
+<task id="changeoil" xml:lang="en-us">
+<title>Changing the oil in your car</title>
+ <prolog/>
+ <taskbody>
+  <prereq>
+<note type="caution">
+<p>Keep your garage neat by organizing the things you keep in the
+   garage. </p>
+</note>
+</prereq>
+  <context>
+   <p>Once every 6000 kilometers or three months, change the oil in your car. This will help keep
+   the engine in good condition. </p>
+  </context>
+  <steps>
+   <step>
+    <cmd>Remove the old oil filter.</cmd>
+   </step>
+   <step>
+    <cmd>Drain the old oil.</cmd>
+   </step>
+   <step>
+    <cmd>Install a new oil filter and gasket.</cmd>
+   </step>
+   <step>
+    <cmd>Add new oil to the engine.</cmd>
+   </step>
+   <step>
+    <cmd>Check the air filter and replace or clean it.</cmd>
+   </step>
+   <step>
+    <cmd>Top up the windshield washer fluid.</cmd>
+   </step>
+  </steps>
+ </taskbody>
+<related-links>
+  <link href="../concepts/oil.xml" format="dita" type="concept">
+<linktext>Oil</linktext>
+  </link>
+  <link href="../concepts/wwfluid.xml" format="dita" type="concept">
+<linktext>Windshield washer
+    fluid</linktext>
+</link>
+ </related-links>
+</task>
+</topic>
+  <topic dir="../tasks" href="../tasks/washingthecar.xml">
+<task id="washcar" xml:lang="en-us">
+ <title>Washing the car</title>
+ <taskbody>
+  <prereq>
+<note type="caution">   <p>Keep your car looking great by washing it regularly.</p>
+  </note>
+</prereq>
+  <steps>
+   <step>
+    <cmd>Move the car onto the driveway.</cmd>
+   </step>
+   <step>
+    <cmd>Attach the water hose to a spout and pull the free end over to the car.</cmd>
+   </step>
+   <step>
+    <cmd>Fill a bucket with soapy water.</cmd>
+   </step>
+   <step>
+    <cmd>Use a sponge to apply the soapy water to the car and scrub off the dirt.</cmd>
+   </step>
+   <step>
+    <cmd>Rinse the car by spraying clean water from the hose.</cmd>
+   </step>
+   <step>
+    <cmd>Dry the car using a dampened chamois.</cmd>
+   </step>
+  </steps>
+ </taskbody>
+ <related-links>
+  <link href="../concepts/waterhose.xml" format="dita" type="concept">
+   <linktext>Water hose</linktext>
+  </link>
+ </related-links>
+</task>
+</topic>
+  <topic dir="../tasks" href="../tasks/spraypainting.xml">
+<task id="spraypaint" xml:lang="en-us">
+<title>Spray painting</title>
+<taskbody>
+<context>
+<p>The garage is a good place to spray paint. </p>
+</context>
+<steps>
+<step>
+<cmd>Move the car out of the garage to avoid getting paint on it.</cmd>
+</step>
+<step>
+<cmd>Place newspaper, cardboard, or a drop-cloth on the garage floor.</cmd>
+</step>
+<step>
+<cmd>Place the object to be painted on the covered area.</cmd>
+</step>
+<step>
+<cmd>Follow the directions on the paint can to paint the object.</cmd>
+</step>
+<step>
+<cmd>Let the paint dry thoroughly before you move the object.</cmd>
+</step>
+</steps>
+</taskbody>
+<related-links>
+<link href="../concepts/paint.xml" format="dita" type="concept">
+<linktext>Paint</linktext>
+</link>
+</related-links>
+</task>
+</topic>
+  <topic dir="../tasks" href="../tasks/shovellingsnow.xml">
+<task id="shovellingsnow" xml:lang="en-us">
+ <title>Shovelling snow</title>
+ <taskbody>
+  
+  <prereq>
+<note type="caution"> <p>Keep your driveway and sidewalks clear of snow and ice by shovelling after any snowfall.</p>
+   
+  </note>
+</prereq>
+  
+  <steps>
+   <step>
+    <cmd>Get the shovel out of the garage</cmd>
+   </step>
+   <step>
+    <cmd>Shovel the driveway, starting at the garage door and working out to the street.</cmd>
+   </step>
+   <step>
+    <cmd>Shovel the sidewalk in front of your house.</cmd>
+   </step>
+   <step>
+    <cmd>Shovel the walk to your front door.</cmd>
+   </step>
+  </steps>
+ </taskbody>
+ <related-links>
+  <link href="../concepts/snowshovel.xml" format="dita" type="concept">
+   <linktext>Snow shovel</linktext>
+  </link>
+ </related-links>
+</task>
+</topic>
+  <topic dir="../tasks" href="../tasks/takinggarbage.xml">
+<task id="takinggarbage" xml:lang="en-us">
+ <title>Taking out the garbage</title>
+ <taskbody>
+  <steps>
+   <step>
+    <cmd>Find out from the town what day of the week garbage is collected in your
+     neighborhood.</cmd>
+   </step>
+   <step>
+    <cmd>The night before collection, place the garbage cans on the curb.</cmd>
+   </step>
+   <step>
+    <cmd>After the garbage has been collected, move the cans back into your garage.</cmd>
+   </step>
+  </steps>
+ </taskbody>
+ <related-links>
+  <link href="../concepts/lawnmower.xml" format="dita" type="concept">
+   <linktext>Lawnmower</linktext>
+  </link>
+ </related-links>
+</task>
+</topic>
+ 
+ 
+  <topic dir="../concepts" href="../concepts/lawnmower.xml">
+<concept id="lawnmowerconcept" xml:lang="en-us">
+ <title>Lawnmower</title>
+ <conbody>
+  <p>The lawnmower is a machine used to cut grass in the yard. </p>
+<p>
+<image href="../image/v2/carwash.jpg" alt="washing the car"/>
+</p>
+  <example>
+<p>Lawnmowers can be electric, gas-powered, or manual.</p>
+</example>
+ </conbody>
+</concept>
+</topic>
+  <topic dir="../concepts" href="../concepts/oil.xml">
+<concept id="oilconcept" xml:lang="en-us">
+ <title>Oil</title>
+ <conbody>
+  <p>Motor oil keeps your car's engine running smoothly. Oil should be changed every 6000
+  kilometers.</p>
+ </conbody>
+ <related-links>
+  <link href="../tasks/changingtheoil.xml" format="dita" type="task">
+   <linktext>Changing the oil</linktext>
+  </link>
+ </related-links>
+</concept>
+</topic>
+  <topic dir="../concepts" href="../concepts/paint.xml">
+<concept id="paintconcept" xml:lang="en-us">
+<title>Paint</title>
+<conbody>
+<p>Paint is useful for refreshing the look of rooms and furniture.</p>
+ <example>
+<p>Example : Store unused portions in the garage.</p>
+</example>
+</conbody>
+<related-links>
+<link href="../tasks/spraypainting.xml" format="dita" type="task">
+<linktext>Spray painting</linktext>
+</link>
+</related-links>
+</concept>
+</topic>
+  <topic dir="../concepts" href="../concepts/shelving.xml">
+<concept id="shelvingconcept" xml:lang="en-us">
+ <title>Shelving</title>
+ <conbody>
+  <p>Wooden or metal shelving is useful for storing things in the garage.</p>
+  <p>It keeps things neat and organized.</p>
+ </conbody>
+ <related-links>
+  <link href="../tasks/organizing.xml" format="dita" type="task">
+   <linktext>Organizing the workbench and tools</linktext>
+  </link>
+ </related-links>
+</concept>
+</topic>
+  <topic dir="../concepts" href="../concepts/snowshovel.xml">
+<concept id="snowshovelconcept" xml:lang="en-us">
+<title>Snow shovel</title>
+<conbody>
+<p>Use the snow shovel to clear the drive way and side walk of snow in the 
+winter. A good snow shovel has a straight, wide scoop and a strong handle. To 
+help snow come off the scoop, spray the scoop with cooking spray.</p>
+</conbody>
+<related-links>
+<link href="../tasks/shovellingsnow.xml" format="dita" type="task">
+<linktext>Shovelling snow</linktext>
+</link>
+</related-links>
+</concept>
+</topic>
+  <topic dir="../concepts" href="../concepts/toolbox.xml">
+<concept id="toolboxconcept" xml:lang="en-us">
+<title>Tool box</title>
+<conbody>
+<p>A tool box contains many compartments for organizing tools and hardware. Keep 
+the tool box handy for all sorts of jobs around the house.</p>
+</conbody>
+<related-links>
+<link href="tools.xml" format="dita" type="concept">
+<linktext>Tools</linktext>
+</link>
+<link href="../tasks/organizing.xml" format="dita" type="task">
+<linktext>Organizing the workbench and tools</linktext>
+</link>
+</related-links>
+</concept>
+</topic>
+  <topic dir="../concepts" href="../concepts/tools.xml">
+<concept id="toolsconcept" xml:lang="en-us">
+ <title>Tools</title>
+ <conbody>
+  <p>Invest in a good set of tools for doing all kinds of tasks around the house. Useful tools
+   include the following items:</p>
+  <p>Keep your tools organized in a tool box.</p>
+ </conbody>
+ <related-links>
+  <link href="toolbox.xml" format="dita" type="concept">
+   <linktext>Tool box</linktext>
+  </link>
+  <link href="../tasks/organizing.xml" format="dita" type="task">
+   <linktext>Organizing the workbench and tools</linktext>
+  </link>
+ </related-links>
+</concept>
+</topic>
+  <topic dir="../concepts" href="../concepts/waterhose.xml">
+<concept id="waterhoseconcept" xml:lang="en-us">
+ <title>Water hose</title>
+ <conbody>
+  <p>A water hose is useful for cleaning and gardening projects around the yard. Keep the hose
+  coiled on a large hook near a water spout.</p>
+  <p>
+<image href="../image/carwash.jpg" alt="washing the car"/>
+</p>
+ </conbody>
+ <related-links>
+  <link href="../tasks/washingthecar.xml" format="dita" type="task">
+   <linktext>Washing the car</linktext>
+  </link>
+ </related-links>
+</concept>
+</topic>
+  <topic dir="../concepts" href="../concepts/wheelbarrow.xml">
+<concept id="wheelbarrow" xml:lang="en-us">
+ <title>Wheel barrow</title>
+ <conbody>
+  <p>A good wheel barrow will save your back from extensive trauma when you garden.</p>
+ </conbody>
+</concept>
+</topic>
+  <topic dir="../concepts" href="../concepts/workbench.xml">
+<concept id="workbenchconcept" xml:lang="en-us">
+<title>Workbench</title>
+<conbody>
+<p>Use the workbench for storing tools and hardware, and for doing small 
+projects.</p>
+</conbody>
+<related-links>
+<link href="../tasks/organizing.xml" format="dita" type="task">
+<linktext>Organizing the workbench and tools</linktext>
+</link>
+</related-links>
+</concept>
+</topic>
+  <topic dir="../concepts" href="../concepts/wwfluid.xml">
+<concept id="wwfluidconcept" xml:lang="en-us">
+<title>Windshield washer fluid</title>
+<conbody>
+<p>Keep your car's windshield washer fluid topped up so you will have a clean 
+windshield whatever the weather or insect population.</p>
+</conbody>
+</concept>
+</topic>
+ 
+</map>

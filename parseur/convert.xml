@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="DITA_to_hdoc" default="convert">
+    <target name="convert">
+        <!-- création des dossiers -->
+        <mkdir dir="../resultat" />
+        <property name="filePathSrc" value="../resultat/src"/>
+        <property name="dir" value="../"/>
+        
+        
+        <dirname property="directoryProperty" file="${filePathSrc}"/>
+        <mkdir dir="${filePathSrc}" />
+        
+                
+            
+        
+       <!-- lecture de la map et preparation du fichier concaténé --> 
+        <xslt in="${dir}map.ditamap" out="concat.xml" style="read_map.xsl">
+            <param name="basedir" expression="${dir}"></param>
+        </xslt>
+        
+        <!-- gestion des images (copie+rename) -->
+        
+        <xslt in="concat.xml" out="ant_image.xml" style="copy_images.xsl">
+            <param name="basedir" expression="${dir}"></param>
+        </xslt>
+        
+        
+        <ant antfile="ant_image.xml"></ant>
+        
+        <!-- traitement général -->
+        
+        <xslt in="concat.xml" out="../resultat/resultat.xml" style="read_concept_task.xsl">
+            <param name="basedir" expression="${dir}"></param>
+        </xslt>
+        
+    </target>
+</project>

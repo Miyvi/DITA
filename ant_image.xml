@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="DITA_to_hdoc" default="convert">
+<target name="convert">
+<copy file="concepts/../image/v2/carwash.jpg" tofile="src/..imagev2carwash.jpg"/>
+<copy file="concepts/../image/carwash.jpg" tofile="src/..imagecarwash.jpg"/>
+</target>
+</project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://ics.utc.fr/hdoc/schemas/xhtml/hdoc1-xhtml.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<html xmlns="http://www.utc.fr/ics/hdoc/xhtml">
+    <head>
+        <title></title>
+        <meta charset=""></meta>
+    </head>
+    <body>
+        <section>
+            <header>
+                <h1></h1>
+            </header>
+           <section>
+               
+               
+               <header>
+                   
+                   <h1></h1>
+               </header>
+               
+             
+               <div data-hdoc-type="advice">
+                   
+                  </div>
+               <footer>
+               </footer>
+               
+           </section>
+        </section>
+    </body>
+</html>
