@@ -2,7 +2,11 @@
 <project name="DITA_to_hdoc" default="convert">
     <target name="convert">
         <!-- création des dossiers -->
-        <mkdir dir="../resultat" />
+        <mkdir dir="../resultat" /> 
+        <mkdir dir="../resultat/META-INF" />
+        <copy file="./mimetype" toFile="../resultat/mimetype"/>
+        <copy file="./container.xml" toFile="../resultat/META-INF/container.xml"/>
+    
         <property name="filePathSrc" value="../resultat/src"/>
         <property name="dir" value="../"/>
         
@@ -29,9 +33,20 @@
         
         <!-- traitement général -->
         
-        <xslt in="concat.xml" out="../resultat/resultat.xml" style="read_concept_task.xsl">
+        <xslt in="concat.xml" out="../resultat/resultat.hdoc" style="read_concept_task.xsl">
             <param name="basedir" expression="${dir}"></param>
         </xslt>
+        
+        
+        <!-- ZIP -->
+        
+        <zip destfile="../resultat.zip"
+            basedir="../resultat"
+        />
+        <!-- supression du dossier -->
+      <!--  <delete dir="../resultat" /> -->
+        
+        
         
     </target>
 </project>

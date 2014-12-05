@@ -14,7 +14,7 @@
             <head>
                 <title><xsl:value-of select="@title"></xsl:value-of></title>
                 <meta charset="utf-8"/>
-                <meta name="generator" content="DITA_to_Hdoc"/>
+                <meta name="generator" content="SimpleChain"/>
             </head>
             <body>
                 <section>
@@ -31,14 +31,13 @@
     
     <!-- gestion des concepts -->
     <xsl:template match="concept">
-        <section data-hdoc-type="opale-expUc">
+        <section data-hdoc-type="unit-of-content">
             <header>
                 <h1><xsl:value-of select="title"></xsl:value-of></h1>
             </header>
-            <div>
-                <xsl:apply-templates select="conbody"/>
-            </div>
             
+                <xsl:apply-templates select="conbody"/>
+
             <!-- gestion des références -->
             
                 <xsl:apply-templates select="related-links"/>
@@ -48,10 +47,12 @@
     <!-- gestion des paragraphes -->
     
     <xsl:template match="p">
-        
-        <xsl:if test="not(following-sibling::*)">
-            <p><xsl:value-of select="."/></p>
+        <!-- paragraphe basique -->
+        <xsl:if test="not(*)">
+            <div><p><xsl:value-of select="."/></p></div>
         </xsl:if>
+        
+        <!-- paragraphe contenant une image ou un prérequis -->
         <xsl:apply-templates select="image"></xsl:apply-templates>
         <xsl:apply-templates select="prereq"></xsl:apply-templates>
         
@@ -64,7 +65,11 @@
         name="asupr"
         select="'/'">        
     </xsl:variable>
-    <xsl:template match="image"><img src="src/{translate(@href,$asupr,'')}" alt="{@alt}"/></xsl:template>
+    <xsl:template match="image">
+        <div>
+            <img src="src/{translate(@href,$asupr,'')}" alt="{@alt}"/>
+        </div>
+    </xsl:template>
     
     <!-- liens -->
     
@@ -83,8 +88,11 @@
     
     <!-- exemple -->
     <xsl:template match="example">
-        <p><xsl:value-of select="p"></xsl:value-of></p>
-        
+        <div>
+            <h6>Exemple : </h6>
+            <p><xsl:value-of select="p"></xsl:value-of></p>
+        </div>
+      
     </xsl:template>
     
     
@@ -93,7 +101,7 @@
     <!-- gestion des tasks -->
     
     <xsl:template match="task">
-        <section data-hdoc-type="opale-expUc">
+        <section data-hdoc-type="unit-of-content">
             <header>
                 <h1><xsl:value-of select="title"></xsl:value-of></h1>
             </header>
